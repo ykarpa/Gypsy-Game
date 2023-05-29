@@ -6,7 +6,11 @@ namespace Gypsy_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game game = new Game(new List<string> { "Юра", "Павло", "Ярослава" });
+
+            Deck deck = new Deck();
+            deck.Shuffle();
+            Console.WriteLine(deck);
         }
     }
 }
